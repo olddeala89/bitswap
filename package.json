@@ -1,0 +1,21 @@
+{
+  "name": "bitswap",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app_test.js"
+  },
+  "author": "Mikhail Nakonechnyi",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "node-telegram-bot-api": "^0.64.0",
+    "puppeteer": "^22.6.1",
+    "qrcode": "^1.5.4",
+    "qrious": "^4.0.2"
+  }
+}

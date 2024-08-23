@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitswap</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/select.js"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="logo" onclick="window.location.href = '/';">
+            <img src="/images/btc_logo.png" alt="" class="logo_img">
+            <p class="logo_text">itswap</p>
+        </div>
+        <nav class="nav">
+            <a href="/rools" class="nav_link">Правила обмена</a>
+            <a href="/amlkyc" class="nav_link">AML/KYC</a>
+            <a href="/contacts" class="nav_link">Контакты</a>
+        </nav>
+        <div class="reg">
+            <a href="" class="signin">Войти</a>
+            <a href="" class="signup">Регистрация</a>
+        </div>
+        <img src="/images/menu.svg" alt="" class="openmenu" id="openmenu">
+    </header>
+    <main>
+        <div class="preferences">
+            <div class="pref_flexbox">
+                <img src="/images/like.png" alt="" class="pref_img">
+                <p class="pref_text">100% гарантия</p>
+            </div>
+            <div class="pref_flexbox">
+                <img src="/images/lock.png" alt="" class="pref_img">
+                <p class="pref_text">Защита ваших данных</p>
+            </div>
+            <div class="pref_flexbox">
+                <img src="/images/rocket.png" alt="" class="pref_img">
+                <p class="pref_text">Высокая скорость</p>
+            </div>
+            <div class="pref_flexbox">
+                <img src="/images/dollar.png" alt="" class="pref_img">
+                <p class="pref_text">Только “чистые” транзакции</p>
+            </div>
+        </div>
+        <section class="changer">
+            <div class="wrapper">
+                <div class="inner_grid">
+                    <div class="sell">
+                        <p class="action">1. Отправляете</p>
+                        <div class="suminput">
+                            <img src="/images/btc.png" alt="" class="currency_icon" id="sellCurIcon1">
+                            <input type="text" class="sellinput" id="sellinput" value="0">
+                            <p class="currency" id="sellCurMark">BTC</p>
+                        </div>
+                        <p class="choose">Валюта отдачи:</p>
+                        <div class="selector">
+                            <div class="variation active_variation">
+                                <img src="/images/btc.png" alt="" class="var_icon">
+                                <p class="var_name">Bitcoin</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/trx.png" alt="" class="var_icon">
+                                <p class="var_name">Tron</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/usdt.png" alt="" class="var_icon">
+                                <p class="var_name">Tether USD</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/usdc.png" alt="" class="var_icon">
+                                <p class="var_name">USD Coin</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/matic.png" alt="" class="var_icon">
+                                <p class="var_name">Polygon</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/sol.png" alt="" class="var_icon">
+                                <p class="var_name">Solana</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/eth.png" alt="" class="var_icon">
+                                <p class="var_name">Ethereum</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/busd.png" alt="" class="var_icon">
+                                <p class="var_name">Binance USD</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/bnb.png" alt="" class="var_icon">
+                                <p class="var_name">BNB</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/cake.png" alt="" class="var_icon">
+                                <p class="var_name">PancakeSwap</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/ton.png" alt="" class="var_icon">
+                                <p class="var_name">Toncoin</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/not.png" alt="" class="var_icon">
+                                <p class="var_name">Notcoin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <p class="action">2. Получаете</p>
+                        <div class="suminput">
+                            <img src="/images/btc.png" alt="" class="currency_icon" id="buyCurIcon1">
+                            <input type="text" class="buyinput" id="buyinput" value="0">
+                            <p class="currency" id="buyCurMark">BTC</p>
+                        </div>
+                        <p class="choose">Валюта получения:</p>
+                        <div class="selector">
+                            <div class="variation active_variation">
+                                <img src="/images/btc.png" alt="" class="var_icon">
+                                <p class="var_name">Bitcoin</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/trx.png" alt="" class="var_icon">
+                                <p class="var_name">Tron</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/usdt.png" alt="" class="var_icon">
+                                <p class="var_name">Tether USD</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/usdc.png" alt="" class="var_icon">
+                                <p class="var_name">USD Coin</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/matic.png" alt="" class="var_icon">
+                                <p class="var_name">Polygon</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/sol.png" alt="" class="var_icon">
+                                <p class="var_name">Solana</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/eth.png" alt="" class="var_icon">
+                                <p class="var_name">Ethereum</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/busd.png" alt="" class="var_icon">
+                                <p class="var_name">Binance USD</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/bnb.png" alt="" class="var_icon">
+                                <p class="var_name">BNB</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/cake.png" alt="" class="var_icon">
+                                <p class="var_name">PancakeSwap</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/ton.png" alt="" class="var_icon">
+                                <p class="var_name">Toncoin</p>
+                            </div>
+                            <div class="variation">
+                                <img src="/images/not.png" alt="" class="var_icon">
+                                <p class="var_name">Notcoin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pay_data">
+                        <form action="/getchange" method="post">
+                        <p class="action">3. Платежные<br>данные</p>
+                        <div class="changing">
+                            <div class="cur1">
+                                <img src="/images/btc.png" alt="" class="cur1_icon" id="sellCurIcon2">
+                                <p class="cur1_currency">Currency</p>
+                                <p class="cur1_sum" id="cur1_sum">0 BTC</p>
+                            </div>
+                            <div class="arrow">
+                                <img src="/images/arrow.svg" alt="" class="arrow_img">
+                            </div>
+                            <div class="cur2">
+                                <img src="/images/btc.png" alt="" class="cur2_icon" id="buyCurIcon2">
+                                <p class="cur2_currency">Currency</p>
+                                <p class="cur2_sum" id="cur2_sum">0 BTC</p>
+                            </div>
+                        </div>
+                        <input type="text" name="email" class="ch_data_input" placeholder="Email">
+                        <input type="text" name="name" class="ch_data_input" placeholder="Ф.И.О. Отправителя">
+                        <input type="text" name="wallet" class="ch_data_input" placeholder="Кошелек получателя">
+                        <input type="hidden" name="sellCurrency" id="sc" value="someValue">
+                        <input type="hidden" name="sellSum" id="ss" value="someValue">
+                        <input type="hidden" name="buyCurrency" id="bc" value="someValue">
+                        <input type="hidden" name="buySum" id="bs" value="someValue">
+                        <div class="agree_box">
+                            <input type="checkbox" class="agree">
+                            <p class="agree_text">Я согласна(ен) с правилами обмена и AML/KYC политикой</p>
+                        </div>
+                        <button type="submit" class="change_btn">Обменять</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="faq_wrapper">
+            <p class="faq_header">Частые вопросы:</p>
+        <section class="faq">
+            <div class="faq_box" id="leftbox">
+                <div class="faq_block">
+                    <div class="faq_textflex">
+                        <p class="faq_text">Название вопроса</p>
+                        <img src="/images/plus.svg" alt="" class="faq_open">
+                    </div>
+                    <p class="faq_fulltext hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae veniam laborum iusto est beatae asperiores facere architecto quasi eveniet cumque molestias id numquam ipsam, reprehenderit fugiat veritatis sequi quos voluptate.</p>
+                    <div class="faq_underline"></div>
+                </div>
+                <div class="faq_block">
+                    <div class="faq_textflex">
+                        <p class="faq_text">Название вопроса</p>
+                        <img src="/images/plus.svg" alt="" class="faq_open">
+                    </div>
+                    <p class="faq_fulltext hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias eveniet itaque, fugit nisi, cumque laudantium delectus, dolore odit assumenda placeat sapiente. Minus necessitatibus nam esse animi modi sapiente enim.</p>
+                    <div class="faq_underline"></div>
+                </div>
+                <div class="faq_block">
+                    <div class="faq_textflex">
+                        <p class="faq_text">Название вопроса</p>
+                        <img src="/images/plus.svg" alt="" class="faq_open">
+                    </div>
+                    <p class="faq_fulltext hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis aut illum totam ipsam ea sequi, itaque perferendis, suscipit quidem, aspernatur sit. Accusamus minima nesciunt quod numquam officiis. Cum, voluptatum.</p>
+                    <div class="faq_underline"></div>
+                </div>
+            </div>
+            <div class="faq_box" id="rightbox">
+                <div class="faq_block">
+                    <div class="faq_textflex">
+                        <p class="faq_text">Название вопроса</p>
+                        <img src="/images/plus.svg" alt="" class="faq_open">
+                    </div>
+                    <p class="faq_fulltext hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis laudantium maiores eveniet recusandae culpa et tempore, obcaecati fuga illum aliquid iure corrupti dignissimos ad deserunt, nobis unde, natus explicabo vitae?</p>
+                    <div class="faq_underline"></div>
+                </div>
+                <div class="faq_block">
+                    <div class="faq_textflex">
+                        <p class="faq_text">Название вопроса</p>
+                        <img src="/images/plus.svg" alt="" class="faq_open">
+                    </div>
+                    <p class="faq_fulltext hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, ex optio tenetur obcaecati reprehenderit corporis dignissimos sequi pariatur nam beatae accusamus soluta quaerat ipsam earum ratione asperiores expedita autem accusantium!</p>
+                    <div class="faq_underline"></div>
+                </div>
+                <div class="faq_block">
+                    <div class="faq_textflex">
+                        <p class="faq_text">Название вопроса</p>
+                        <img src="/images/plus.svg" alt="" class="faq_open">
+                    </div>
+                    <p class="faq_fulltext hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus animi porro accusamus dolorem tempora! Reiciendis, nemo! Modi ex voluptatibus cupiditate vero! Suscipit accusantium ea quis error! Eum totam illum dolores.</p>
+                    <div class="faq_underline"></div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer_flex">
+            <p class="partner">Партнер</p>
+            <img src="/images/bestchange.png" alt="" class="bestchange">
+            <p class="copyright">© 2024 bitswap.ru, все права защищены.</p>
+        </div>
+    </footer>
+    <script src="/header.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
